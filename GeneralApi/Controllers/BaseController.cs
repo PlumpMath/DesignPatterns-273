@@ -22,7 +22,7 @@ namespace GeneralApi.Controllers
                 return Request.CreateResponse( HttpStatusCode.OK, responseModel);
                 //return Request.CreateResponse(HttpResponseMap.CodeMapping[response.Code].Key, responseModel);
             }
-            catch (Exception)
+            catch (Exception) 
             {
 
                 throw;
