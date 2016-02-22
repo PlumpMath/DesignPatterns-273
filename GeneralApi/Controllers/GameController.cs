@@ -19,7 +19,7 @@ namespace GeneralApi.Controllers
             if (!ModelState.IsValid)
             {
                 ServiceResponse<Game> gs = new ServiceResponse<Game>() { Code = 500, Data = null };
-                return GenericResponse(gs);
+                return GenericResponse(gs); //geberarsytfys sdihiusd
 
             }
             else
