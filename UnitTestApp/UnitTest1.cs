@@ -2,6 +2,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GeneralDAL;
 using GeneralModels;
+using System.Diagnostics;
+using Newtonsoft;
+using Newtonsoft.Json;
 
 namespace UnitTestApp
 {
@@ -12,7 +15,10 @@ namespace UnitTestApp
         public void TestMongo()
         {
             MongoDOA doa = new MongoDOA();
-            doa.getAll<Game>();
+          var retList =   doa.getAll<Game>();
+            
+            Trace.WriteLine(JsonConvert.SerializeObject(retList));
+
         }
 
         [TestMethod]

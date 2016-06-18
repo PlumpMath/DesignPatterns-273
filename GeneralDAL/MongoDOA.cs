@@ -1,4 +1,5 @@
 ﻿using GeneralModels;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -24,12 +25,13 @@ namespace GeneralDAL
             
         }
 
-        public MongoCollection<T> getAll<T>()
+        public List<T> getAll<T>()
         {
             var db = server.GetDatabase(instanceName);
             var collection = db.GetCollection<T>("Game");
-           
-            return collection;
+            MongoCursor<T> cursor = collection.FindAll();
+            List<T> entities = cursor.ToList();
+            return entities;
         }
         
         public T insertObject<T>(T newInstance)

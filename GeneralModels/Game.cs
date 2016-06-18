@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using MongoDB.Bson;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,11 @@ using System.Threading.Tasks;
 
 namespace GeneralModels
 {
+    [Serializable]
     public class Game
     {
+        public ObjectId Id { get; set; }
+
         [JsonProperty("gameId")]
         public Guid GameId { get; set; }
         [JsonProperty("gameName")]
