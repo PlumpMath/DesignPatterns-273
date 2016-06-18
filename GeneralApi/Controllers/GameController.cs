@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
@@ -14,21 +11,22 @@ namespace GeneralApi.Controllers
     {
         [HttpGet]
         [Route("getGames/{gameId}")]
-        public async Task<HttpResponseMessage> GetGames(Guid GameId)
+       
+        public async Task<HttpResponseMessage> GetGames(Guid gameId)
         {
             if (!ModelState.IsValid)
             {
-                ServiceResponse<Game> gs = new ServiceResponse<Game>() { Code = 500, Data = null };
+                var gs = new ServiceResponse<Game>() { Code = 500, Data = null };
                 return GenericResponse(gs); //geberarsytfys sdihiusd
 
             }
             else
             {
-                await Task.Delay(5000);
-                Game RetData = new Game() { GameId = new Guid(), GameName = "New Game" };
-                ServiceResponse<Game> gs = new ServiceResponse<Game>() { Code = 200, Data = RetData };
-                //return GenericResponse<Game>(gs);
-               return  await Task.Run(() => { return GenericResponse<Game>(gs); });
+                //await Task.Delay(5000);
+                var retData = new Game() { GameId = new Guid(), GameName = "New Game" };
+                var gs = new ServiceResponse<Game>() { Code = 200, Data = retData };
+                return GenericResponse(gs);
+               //return  await Task.Run(() => { return GenericResponse(gs); });
          
 
             }
