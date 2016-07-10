@@ -7,9 +7,12 @@ using Microsoft.AspNet.Identity;
 using System.Net.Http;
 using System.Web.Http;
 using Newtonsoft.Json;
+using System.Web.Http.Cors;
 
 namespace GeneralApi.Controllers
 {
+   
+    [EnableCors( origins:"*",headers:"*",methods:"*")]
     public class BaseController : ApiController
     {
         protected string UserId { get { return User.Identity.GetUserId(); } }

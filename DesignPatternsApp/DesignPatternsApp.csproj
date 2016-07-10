@@ -68,6 +68,12 @@
     <Compile Include="BuilderPatterns\CarMaker.cs" />
     <Compile Include="BuilderPatterns\FordBuilder.cs" />
     <Compile Include="BuilderPatterns\HundaiBuilder.cs" />
+    <Compile Include="FactoryPattern\Document.cs" />
+    <Compile Include="FactoryPattern\EducationPage.cs" />
+    <Compile Include="FactoryPattern\ExperiencePage.cs" />
+    <Compile Include="FactoryPattern\Page.cs" />
+    <Compile Include="FactoryPattern\Resume.cs" />
+    <Compile Include="FactoryPattern\WorkDocument.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

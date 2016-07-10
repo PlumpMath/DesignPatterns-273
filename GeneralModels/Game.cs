@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GeneralModels
 {
-    [Serializable]
+   // [Serializable]
     public class Game
     {
         public ObjectId Id { get; set; }
@@ -17,5 +17,13 @@ namespace GeneralModels
         public Guid GameId { get; set; }
         [JsonProperty("gameName")]
         public string GameName { get; set; }
+
+
+        internal static int a = 0;
+
+        public Game()
+        {
+            Level l1 = new Level();
+        }
     }
 }

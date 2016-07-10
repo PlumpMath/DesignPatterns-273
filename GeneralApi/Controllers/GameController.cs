@@ -24,7 +24,8 @@ namespace GeneralApi.Controllers
             {
                 //await Task.Delay(5000);
                 var retData = new Game() { GameId = new Guid(), GameName = "New Game" };
-                var gs = new ServiceResponse<Game>() { Code = 200, Data = retData };
+               
+                     var gs = new ServiceResponse<Game>() { Code = 200, Data = retData };
                 return GenericResponse(gs);
                //return  await Task.Run(() => { return GenericResponse(gs); });
          
