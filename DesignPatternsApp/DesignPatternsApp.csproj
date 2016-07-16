@@ -57,6 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter Pattern\Adaptee.cs" />
+    <Compile Include="Adapter Pattern\Adapter.cs" />
+    <Compile Include="Adapter Pattern\Target.cs" />
     <Compile Include="BridgePattern\EnglishFormat.cs" />
     <Compile Include="BridgePattern\EnglishMenu.cs" />
     <Compile Include="BridgePattern\FranchFormatter.cs" />
@@ -68,14 +71,44 @@
     <Compile Include="BuilderPatterns\CarMaker.cs" />
     <Compile Include="BuilderPatterns\FordBuilder.cs" />
     <Compile Include="BuilderPatterns\HundaiBuilder.cs" />
+    <Compile Include="ChainOfResponsibility\ConcreteHandler1.cs" />
+    <Compile Include="ChainOfResponsibility\ConcreteHandler2.cs" />
+    <Compile Include="ChainOfResponsibility\ConcreteHandler3.cs" />
+    <Compile Include="ChainOfResponsibility\Handler.cs" />
+    <Compile Include="CompositePattern\Component.cs" />
+    <Compile Include="CompositePattern\File.cs" />
+    <Compile Include="CompositePattern\Folder.cs" />
+    <Compile Include="Decorator\Component.cs" />
+    <Compile Include="Decorator\ConcreteComponent.cs" />
+    <Compile Include="Decorator\ConcreteDecoratorA.cs" />
+    <Compile Include="Decorator\ConcreteDecoratorB.cs" />
+    <Compile Include="Decorator\Decorator.cs" />
+    <Compile Include="FacadePattern\Facade.cs" />
+    <Compile Include="FacadePattern\SubSystemOne.cs" />
+    <Compile Include="FacadePattern\SubSystemTwo.cs" />
+    <Compile Include="FacadePattern\SubSysytemThree.cs" />
     <Compile Include="FactoryPattern\Document.cs" />
     <Compile Include="FactoryPattern\EducationPage.cs" />
     <Compile Include="FactoryPattern\ExperiencePage.cs" />
     <Compile Include="FactoryPattern\Page.cs" />
     <Compile Include="FactoryPattern\Resume.cs" />
     <Compile Include="FactoryPattern\WorkDocument.cs" />
+    <Compile Include="MediatorPattern\Colleague.cs" />
+    <Compile Include="MediatorPattern\ConcreteColleague1.cs" />
+    <Compile Include="MediatorPattern\ConcreteColleague2.cs" />
+    <Compile Include="MediatorPattern\ConcreteMediator.cs" />
+    <Compile Include="MediatorPattern\Mediator.cs" />
+    <Compile Include="ObserverPattern\ConcreteObserver.cs" />
+    <Compile Include="ObserverPattern\ConcreteSubject.cs" />
+    <Compile Include="ObserverPattern\Observer.cs" />
+    <Compile Include="ObserverPattern\Subject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype\activate.cs" />
+    <Compile Include="Prototype\ConcretePrototype1.cs" />
+    <Compile Include="Prototype\ConcretePrototype2.cs" />
+    <Compile Include="Prototype\Prototype.cs" />
+    <Compile Include="SingleTone\Logger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
