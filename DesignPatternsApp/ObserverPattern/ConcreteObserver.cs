@@ -38,4 +38,4 @@ namespace DesignPatternsApp.ObserverPattern
         }
     }
 }
-}
+
