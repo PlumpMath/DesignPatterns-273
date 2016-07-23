@@ -17,13 +17,10 @@ namespace GeneralModels
         public Guid GameId { get; set; }
         [JsonProperty("gameName")]
         public string GameName { get; set; }
-
-
         internal static int a = 0;
-
         public Game()
         {
-            Level l1 = new Level();
+            Level l1 = new Level(); 
         }
     }
 }
